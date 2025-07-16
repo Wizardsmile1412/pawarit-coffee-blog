@@ -297,8 +297,10 @@ function ViewPostPage() {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
                   {postInfo?.title}
                 </h1>
-                <p className="text-sm sm:text-base mb-4">
+                <p className="markdown text-sm sm:text-base mb-4">
+                  <ReactMarkdown>
                   {postInfo?.description}
+                  </ReactMarkdown>
                 </p>
               </div>
 

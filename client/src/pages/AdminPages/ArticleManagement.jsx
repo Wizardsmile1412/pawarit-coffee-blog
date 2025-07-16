@@ -777,7 +777,7 @@ export function CreateArticle() {
 
           <div className="mb-6">
             <label htmlFor="description" className="block text-gray-600 mb-2">
-              Introduction (max 120 letters)
+              Introduction (max 250 letters)
             </label>
             <textarea
               id="description"
@@ -785,12 +785,12 @@ export function CreateArticle() {
               placeholder="Introduction"
               value={articleData.description}
               onChange={handleInputChange}
-              maxLength={120}
+              maxLength={250}
               rows={3}
               className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200"
             />
             <p className="text-sm text-gray-500 mt-1">
-              {(articleData.description || '').length}/120 characters
+              {(articleData.description || '').length}/250 characters
             </p>
           </div>
 
@@ -1195,7 +1195,7 @@ export function EditArticle() {
 
           <div className="mb-6">
             <label htmlFor="description" className="block text-gray-600 mb-2">
-              Introduction (max 120 letters)
+              Introduction (max 250 letters)
             </label>
             <textarea
               id="description"
@@ -1203,12 +1203,12 @@ export function EditArticle() {
               placeholder="Introduction"
               value={articleData.description}
               onChange={handleInputChange}
-              maxLength={120}
+              maxLength={250}
               rows={3}
               className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200"
             />
             <p className="text-sm text-gray-500 mt-1">
-              {(articleData.description || '').length}/120 characters
+              {(articleData.description || '').length}/250 characters
             </p>
           </div>
 
