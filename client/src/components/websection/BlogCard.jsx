@@ -1,4 +1,7 @@
+import React from "react";
+import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
+import "@/styles/globals.css";
 
 function BlogCard({ post }) {
   //Convert date to date format dd month year
@@ -32,8 +35,8 @@ function BlogCard({ post }) {
             {post.title}
           </h2>
         </Link>
-        <p className="text-muted-foreground text-sm mb-4 flex-grow line-clamp-3">
-          {post.description}
+        <p className="markdown text-muted-foreground text-sm mb-4 flex-grow line-clamp-3">
+          <ReactMarkdown>{post?.description}</ReactMarkdown>
         </p>
         <div className="flex items-center text-sm">
           <img
